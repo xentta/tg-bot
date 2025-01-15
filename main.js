@@ -30,6 +30,15 @@ bot.on(message('web_app_data'), async ctx => {
     const data = ctx.webAppData.data.json()
     ctx.reply(`Поздравляю: ${data}`)
 })
+bot.telegram.setMyCommands([
+    { command: '/start', description: 'Запуск бота' },
+    { command: '/info', description: 'Открыть сайт' },
+]);
+
+// Команда для перехода по URL
+bot.command('info', (ctx) => {
+    ctx.reply('Можешь перейти сюда https://gz.mos.ru');
+});
 
 //Обработчик для инлайн кнопки
 // bot.action('button1', (ctx) => {
