@@ -4,8 +4,8 @@ import { message } from 'telegraf/filters'
 const token = '7946503633:AAHvng-wwXe4jZ8smNs9NbPKaF-U0FoBFpM'
 const webAppUrl = 'https://autotest.service.ag.mos.ru/mini-app/polls/11637/simple?uid=NeBUqU&source=tg'
 const gz = 'https://gz.mos.ru'
-const ag = 'https://ag-vmeste.ru/main'
-const mp = 'https://gz.mos.ru'
+const mp = 'https://ag-vmeste.ru/main'
+const ag = 'https://ag.mos.ru/home'
 
 const bot = new Telegraf(token)
 
