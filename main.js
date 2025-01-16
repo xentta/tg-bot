@@ -2,7 +2,7 @@ import { Telegraf, Markup } from 'telegraf'
 import { message } from 'telegraf/filters'
 
 const token = '7946503633:AAHvng-wwXe4jZ8smNs9NbPKaF-U0FoBFpM'
-const webAppUrl = 'https://autotest.service.ag.mos.ru/mini-app/polls/11622/simple/?uid=8dokoC&source=tg'
+const webAppUrl = 'https://autotest.service.ag.mos.ru/mini-app/polls/11637/simple?uid=NeBUqU&source=tg'
 const gz = 'https://gz.mos.ru'
 const ag = 'https://ag-vmeste.ru/main'
 const mp = 'https://gz.mos.ru'
@@ -28,7 +28,7 @@ bot.command('start', (ctx) => {
 
 bot.on(message('web_app_data'), async ctx => {
     const data = ctx.webAppData.data.json()
-    ctx.reply(`Поздравляю: ${data}`)
+    ctx.reply(`Поздравляю: ${JSON.stringify(data)}`)
 })
 bot.telegram.setMyCommands([
     { command: '/start', description: 'Запуск бота' },
