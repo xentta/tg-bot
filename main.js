@@ -1,8 +1,8 @@
 import { Telegraf, Markup } from 'telegraf'
 import { message } from 'telegraf/filters'
 
-const token = '7946503633:AAHvng-wwXe4jZ8smNs9NbPKaF-U0FoBFpM'
-const webAppUrl = 'https://autotest.service.ag.mos.ru/mini-app/polls/11637/simple?uid=NeBUqU&source=tg'
+const token = ''
+const webAppUrl = 'https://autotest.service.ag.mos.ru/mini-app/polls/11657/simple?uid=bhnkqz&source=tg'
 const gz = 'https://gz.mos.ru'
 const mp = 'https://ag-vmeste.ru/main'
 const ag = 'https://ag.mos.ru/home'
@@ -14,6 +14,8 @@ bot.command('start', (ctx) => {
     // Markup.inlineKeyboard(
     //     [{ text: 'Кнопка 1', callback_data: 'button1' }],
     //     ),
+
+
     Markup.keyboard([
         [
           Markup.button.webApp('Тестируем голосования', webAppUrl),
